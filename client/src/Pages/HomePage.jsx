@@ -2,11 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "../Layout/Layout";
 import heroPng from "../assets/images/hero.png";
+import Spline from "@splinetool/react-spline";
+import SplineBot from "./SplineBot";
+// import SplineBot from "./SplineBot"; 
 
 export default function HomePage() {
   return (
     <Layout>
-      <section className="md:py-10 py-7 mb-10 text-white flex md:flex-row flex-col-reverse items-center justify-center md:gap-10 gap-7 md:px-16 px-6 min-h-[85vh]">
+     {/* <section className="md:py-10 py-7 mb-10 text-white flex md:flex-row flex-col-reverse items-center justify-center md:gap-10 gap-7 md:px-16 px-6 min-h-[85vh]">
         <div className="md:w-1/2 w-full space-y-7">
           <h1 className="md:text-5xl text-6xl font-semibold text-gray-900 dark:text-gray-200">
             Find out best
@@ -33,9 +36,12 @@ export default function HomePage() {
         </div>
 
         <div className="md:w-1/2 w-1/7 flex items-center justify-center">
-          <img alt="homepage image" src={heroPng} />
+          {/* <img alt="homepage image" src={heroPng} /> */}
+          {/* <SplineBot/>
         </div>
-      </section>
+      </section> */} 
+      <SplineBot/>
     </Layout>
+    
   );
 }
