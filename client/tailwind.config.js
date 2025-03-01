@@ -12,6 +12,11 @@ export default {
         'nunito-sans': ['Nunito Sans', 'sans-serif'],
         'open-sans': ['Open Sans', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
+        basier: ["Basier Circle", "sans-serif"]
+      },
+      colors: {
+        primary: '#07cbf7', 
+        secondary: '#205ae3', 
       }
     },
   },
