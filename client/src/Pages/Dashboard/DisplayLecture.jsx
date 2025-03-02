@@ -71,14 +71,14 @@ export default function DisplayLecture() {
             {/* right section for lectures list */}
             <div className="md:w-[48%] pb-12 md:flex-row flex-col w-full md:h-full h-[60%] overflow-y-scroll">
               <ul className="w-full md:p-2 p-0  flex flex-col gap-5 shadow-sm">
-                <li className="font-semibold bg-slate-50 dark:bg-slate-100 p-3 rounded-md shadow-lg sticky top-0 text-xl text-[#2320f7] font-nunito-sans flex items-center justify-between">
+                <li className="font-semibold bg-slate-50 dark:bg-slate-100 p-3 rounded-md shadow-lg sticky top-0 text-xl text-black font-nunito-sans flex items-center justify-between">
                   <p>Lectures list</p>
                   {role === "ADMIN" && (
                     <button
                       onClick={() =>
                         navigate("/course/addlecture", { state: { ...state } })
                       }
-                      className="btn-primary px-3 py-2 font-inter rounded-md font-semibold text-sm"
+                      className="bg-primary px-3 py-2 font-inter rounded-md font-semibold text-sm"
                     >
                       Add new lecture
                     </button>

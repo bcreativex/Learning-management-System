@@ -28,14 +28,14 @@ export default function CourseDescription() {
             <div className="space-y-4">
               <div className="flex flex-col text-lg font-inter">
                 <p className="font-semibold">
-                  <span className="text-yellow-600 dark:text-yellow-500 font-bold">
+                  <span className="text-blue-500 dark:text-primary font-bold">
                     Total lectures:{" "}
                   </span>
                   {state?.numberOfLectures}
                 </p>
 
                 <p className="font-semibold">
-                  <span className="text-yellow-600 dark:text-yellow-500 font-bold">
+                  <span className="text-blue-500 dark:text-primary font-bold">
                     Instructor:{" "}
                   </span>
                   {state?.createdBy}
@@ -45,7 +45,7 @@ export default function CourseDescription() {
           </div>
 
           <div className="lg:col-span-1 space-y-10 text-lg">
-            <h1 className="md:text-3xl text-2xl lg:text-4xl font-bold font-lato text-yellow-500 mb-5 text-center w-fit after:content-[' '] relative after:absolute after:-bottom-3.5 after:left-0 after:h-1.5 after:w-[60%] after:rounded-full after:bg-purple-400 dark:after:bg-purple-600">
+            <h1 className="md:text-3xl text-2xl lg:text-4xl font-bold font-lato text-primary mb-5 text-center w-fit after:content-[' '] relative after:absolute after:-bottom-3.5 after:left-0 after:h-1.5 after:w-[60%] after:rounded-full after:bg-purple-400 dark:after:bg-purple-600">
               {state?.title}
             </h1>
 
@@ -63,14 +63,14 @@ export default function CourseDescription() {
                 onClick={() =>
                   navigate("/course/displaylectures", { state: { ...state } })
                 }
-                className="bg-orange-500 dark:bg-orange-600 text-white text-xl rounded-md font-bold px-5 py-3 w-full   transition-all ease-in-out duration-300"
+                className="bg-primary dark:bg-primary text-white text-xl rounded-md font-bold px-5 py-3 w-full   transition-all ease-in-out duration-300"
               >
                 Watch lectures
               </button>
             ) : (
               <button
                 onClick={() => navigate("/checkout")}
-                className="bg-orange-500 dark:bg-orange-600 text-white text-xl rounded-md font-bold px-5 py-3 w-full   transition-all ease-in-out duration-300"
+                className="bg-primary dark:bg-primary text-white text-xl rounded-md font-bold px-5 py-3 w-full   transition-all ease-in-out duration-300"
               >
                 Subscribe
               </button>

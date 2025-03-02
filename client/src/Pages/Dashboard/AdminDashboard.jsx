@@ -49,9 +49,9 @@ export default function AdminDashboard() {
       {
         label: "User Details",
         data: [allUsersCount, subscribedCount],
-        backgroundColor: ["yellow", "green"],
+        backgroundColor: ["#00B4FF", "#02e659"],
         borderWidth: 1,
-        borderColor: ["yellow", "green"],
+        borderColor: ["#00B4FF", "#00ff48"],
       },
     ],
   };
@@ -105,9 +105,9 @@ export default function AdminDashboard() {
   return (
     <Layout hideFooter={true}>
       <section className="py-5 lg:py-10 flex flex-col gap-7">
-        <h1 className="text-center text-3xl text-yellow-500 font-inter font-semibold">
+        <h1 className="text-center text-3xl text-primary font-inter font-semibold">
           Admin{" "}
-          <span className="text-violet-500 font-nunito-sans">Dashboard</span>
+          <span className="text-gray-500 font-nunito-sans">Dashboard</span>
         </h1>
         <div className="flex flex-col gap-14">
           {/* creating the records card and chart for sales and user details */}
@@ -138,7 +138,7 @@ export default function AdminDashboard() {
                       {allUsersCount}
                     </h3>
                   </div>
-                  <FaUsers className="text-yellow-500 text-5xl" />
+                  <FaUsers className="text-primary text-5xl" />
                 </div>
 
                 {/* subscribedCount */}
@@ -210,7 +210,7 @@ export default function AdminDashboard() {
                 onClick={() => {
                   navigate("/course/create");
                 }}
-                className="w-fit bg-yellow-500  transition-all ease-in-out duration-300 rounded py-2 px-4 font-[600] font-inter text-lg text-white cursor-pointer"
+                className="w-fit bg-primary  transition-all ease-in-out duration-300 rounded py-2 px-4 font-[600] font-inter text-lg text-white cursor-pointer"
               >
                 Create new course
               </button>
