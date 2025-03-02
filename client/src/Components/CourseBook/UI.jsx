@@ -57,9 +57,10 @@ export const UI = () => {
         >
           <img className="w-20" src="/images/wawasensei-white.png" />
         </a>
-        <h1 className="text-[36px] text-center mb-auto mt-8 font-basier text-black">
+        <h1 className="text-[42px] text-center mb-auto mt-8 font-bold text-black font-poppins">
   Our Courses
 </h1>
+
 
 
 
@@ -70,7 +71,7 @@ export const UI = () => {
                 key={index}
                 className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${
                   index === page
-                    ? "bg-white/90 text-black"
+                    ? "bg-black/90 text-white"
                     : "bg-black/30 text-white"
                 }`}
                 onClick={() => setPage(index)}
@@ -81,7 +82,7 @@ export const UI = () => {
             <button
               className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${
                 page === pages.length
-                  ? "bg-white/90 text-black"
+                  ? "bg-black/90 text-white"
                   : "bg-black/30 text-white"
               }`}
               onClick={() => setPage(pages.length)}

@@ -23,6 +23,7 @@ import CheckoutFail from "./Pages/Payment/CheckoutFail";
 import DisplayLecture from "./Pages/Dashboard/DisplayLecture";
 import AddLecture from "./Pages/Dashboard/AddLecture";
 import AdminDashboard from "./Pages/Dashboard/AdminDashboard";
+import "@fontsource/inter";
 
 function App() {
   return (
