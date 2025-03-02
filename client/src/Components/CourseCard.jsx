@@ -18,7 +18,7 @@ export default function CourseCard({ data }) {
           alt="course thumbnail"
         />
         <div className="absolute top-2 right-2 p-2 bg-white dark:bg-zinc-700 rounded-full">
-          <FaPlay className="text-yellow-500 dark:text-yellow-400 text-xl" />
+          <FaPlay className="text-primary dark:text-primary text-xl" />
         </div>
       </div>
       <div className="p-4 md:space-y-2 space-y-3 text-gray-800 dark:text-white">
@@ -27,17 +27,17 @@ export default function CourseCard({ data }) {
           {data?.description}
         </p>
         <div className="flex items-center space-x-2">
-          <FaBook className="text-yellow-500 dark:text-yellow-400" />
+          <FaBook className="text-blue-500 dark:text-primary" />
           <p className="text-base font-semibold">Category: {data?.category}</p>
         </div>
         <div className="flex items-center space-x-2">
-          <FaBook className="text-yellow-500 dark:text-yellow-400" />
+          <FaBook className="text-blue-500 dark:text-primary" />
           <p className="text-base font-semibold">
             Total lectures: {data?.numberoflectures}
           </p>
         </div>
         <div className="flex items-center space-x-2">
-          <FaUser className="text-yellow-500 dark:text-yellow-400" />
+          <FaUser className="text-blue-500 dark:text-primary" />
           <p className="text-base font-semibold">
             Instructor: {data?.createdBy}
           </p>
