@@ -94,7 +94,7 @@ export default function Profile() {
           className="flex flex-col dark:bg-base-100 relative gap-7 rounded-lg md:py-10 py-7 md:px-7 px-3 md:w-[750px] w-full shadow-custom dark:shadow-xl  "
         >
           <div className="flex justify-center items-center">
-            <h1 className="text-center absolute left-6 md:top-auto top-5 text-violet-500 dark:text-purple-500 md:text-4xl text-3xl font-bold font-inter after:content-[' ']  after:absolute after:-bottom-3.5 after:left-0 after:h-1.5 after:w-[60%] after:rounded-full after:bg-yellow-400 dark:after:bg-yellow-600">
+            <h1 className="text-center absolute left-6 md:top-auto top-5 text-primary dark:text-primary md:text-4xl text-3xl font-bold font-inter after:content-[' ']  after:absolute after:-bottom-3.5 after:left-0 after:h-1.5 after:w-[60%] after:rounded-full after:bg-black dark:after:bg-primary">
               Profile
             </h1>
             {/* avatar */}
@@ -201,7 +201,7 @@ export default function Profile() {
           <div className="w-full flex md:flex-row flex-col md:justify-between justify-center md:gap-0 gap-3">
             <button
               type="submit"
-              className="py-3.5  rounded-md bg-yellow-500 mt-3 text-white font-inter   md:w-[48%] w-full"
+              className="py-3.5  rounded-md bg-primary mt-3 text-white font-inter   md:w-[48%] w-full"
               disabled={!isChanged || isUpdating}
             >
               {isUpdating ? "Saving Changes..." : "Save Changes"}
@@ -212,7 +212,7 @@ export default function Profile() {
               <button
                 type="button"
                 onClick={handleCancelSubscription}
-                className="py-3.5 rounded-md bg-[#f32e2e] mt-3 text-white font-inter md:w-[48%] w-full"
+                className="py-3.5 rounded-md bg-black mt-3 text-white font-inter md:w-[48%] w-full"
               >
                 Cancel Subscription
               </button>

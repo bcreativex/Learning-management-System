@@ -131,11 +131,11 @@ export default function Sidebar({ hideBar = false }) {
             {isLoggedIn ? (
               <li className="absolute bottom-4 w-[90%]">
                 <div className="w-full flex md:flex-row flex-col gap-2 items-center justify-center">
-                  <button className="btn-primary px-3.5 py-2.5 font-semibold rounded-md w-full">
+                  <button className="bg-primary text-white px-3.5 py-2.5 font-semibold rounded-md w-full">
                     <Link to="/user/profile">Profile</Link>
                   </button>
                   <button
-                    className="btn-secondary px-3.5 py-2.5 font-semibold rounded-md w-full"
+                    className="bg-black text-white px-3.5 py-2.5 font-semibold rounded-md w-full"
                     onClick={onLogout}
                     disabled={isLoading}
                   >
@@ -146,10 +146,10 @@ export default function Sidebar({ hideBar = false }) {
             ) : (
               <li className="absolute bottom-4 w-[90%]">
                 <div className="w-full flex items-center justify-center">
-                  <button className="bg-primary px-3.5 py-2.5 font-semibold rounded-md w-full">
+                  <button className="bg-primary text-white px-3.5 py-2.5 font-semibold rounded-md w-full">
                     <Link to="/login">Login</Link>
                   </button>
-                  <button className="bg-secondary px-3.5 py-2.5 font-semibold rounded-md w-full">
+                  <button className="bg-black text-white px-3.5 py-2.5 font-semibold rounded-md w-full">
                     <Link to="/signup">Signup</Link>
                   </button>
                 </div>
